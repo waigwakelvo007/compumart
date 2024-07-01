@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compumart</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="static/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="static/style.css">
+  <!--fontawesome offline -->
+  <link rel="stylesheet" href="./static/fontawesome-free-6.5.1-web/css/all.css">
+</head>
+<body>
+  <div class="notify">
+    <h1>Please Use mobile phone to access this site, Other views will be available soon, They are disabled at the moment</h1>
+    <h4>Sorry for any incovininence cost</h4>
+  </div>
+  <div class="body-content">
+    <div class="overlay" data-overlay></div>
+    <!--
+      - MODAL
+    -->
+    <div class="modal" data-modal>
+
+      <div class="modal-close-overlay" data-modal-overlay></div>
+
+      <div class="modal-content">
+
+        <button class="modal-close-btn" data-modal-close>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="newsletter-img">
+          <img src="./static/images/logo.png" alt="subscribe newsletter" width="400" height="400">
+        </div>
+        <div class="newsletter">
+          <form action="#">
+            <div class="newsletter-header">
+              <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+              <p class="newsletter-desc">
+                Subscribe the <b>Anon</b> to get latest products and discount update.
+              </p>
+            </div>
+            <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+            <button type="submit" class="btn-newsletter">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--
+      - NOTIFICATION TOAST
+    -->
+    <div class="notification-toast" data-toast>
+      <button class="toast-close-btn" data-toast-close>
+        <ion-icon name="close-outline"></ion-icon>
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="toast-banner">
+        <img src="./static/images/products/360-laptop.png" alt="bought product" width="80" height="70">
+      </div>
+      <div class="toast-detail">
+        <p class="toast-message">
+          Someone new just bought
+        </p>
+        <p class="toast-title">
+          Hp Litebook Laptop
+        </p>
+        <p class="toast-meta">
+          <time datetime="PT2M">2 Minutes</time> ago
+        </p>
+        <p class="toast-message">
+          get one while stock last
+        </p>
+      </div>
+    </div>
+    <!--
+      - HEADER
+    -->
+    <header>
+      <div class="header-top">
+        <div class="container">
+
+          <ul class="header-social-container">
+            <div class="header-top-actions">
+              <a href="#"><img src="./static/images/logo.png" alt="Compumart logo" class="payment-img"></a>
+            </div>
+            <div class="social-links">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </div>
+          </ul>
+
+          <div class="header-alert-news">
+            <p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="mobile-bottom-navigation">
+          <button class="action-btn" data-mobile-menu-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+            <i class="fa fa-bars"></i>
+          </button>
+          <a href="#" class="header-logo">
+            <img src="./static/images/logo.png" alt="Compumart logo" width="120" height="36">
+          </a>
+          <button class="action-btn" data-mobile-menu-open-btn>
+            <ion-icon name="grid-outline"></ion-icon>
+            <i class="fab fa-whatsapp"></i>
+          </button>
+        </div>
+        <div class="container">
+          <div class="header-search-container">
+            <input type="search" name="search" class="search-field" placeholder="Search Product...">
+            <button class="search-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+      <nav class="desktop-navigation-menu">
+        <div class="container">
+          <ul class="desktop-menu-category-list">
+            <li class="menu-category">
+              <a href="#" class="menu-title">Home</a>
+            </li>
+            <li class="menu-category">
+              <a href="#" class="menu-title">Products</a>
+              <ul class="dropdown-list">
+                <li class="dropdown-item">
+                  <a href="#">Laptops</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Watches</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Printers</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Desktop Computers</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Headphones</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-category">
+              <a href="#" class="menu-title">Services</a>
+              <ul class="dropdown-list">
+                <li class="dropdown-item">
+                  <a href="#">Softwares Installation</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Laptop Repairs</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Desktop Repairs</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">IT Suport</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-category">
+              <a href="#" class="menu-title">Accessories</a>
+              <ul class="dropdown-list">
+                <li class="dropdown-item">
+                  <a href="#">Mouse</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Laptop Chargers</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Laptop Screens</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Laptop Casing</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Keybords</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-category">
+              <a href="#" class="menu-title">About Us</a>
+            </li>
+            <li class="menu-category">
+              <a href="#" class="menu-title">Collenctions</a>
+            </li>
+            <li class="menu-category">
+              <a href="#" class="menu-title">Blog</a>
+            </li>
+            <li class="menu-category">
+              <a href="#" class="menu-title">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+        <div class="menu-top">
+          <h2 class="menu-title">Compu<span style="color: black;">Mart</span></h2>
+          <button class="menu-close-btn" data-mobile-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <ul class="mobile-menu-category-list">
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Products</p>
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#products" class="submenu-title">Laptops</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#products" class="submenu-title">Desktop Computers</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#products" class="submenu-title">Printers</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#products" class="submenu-title">Watches</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Accessories</p>
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#products" class="submenu-title">Mouse</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#products" class="submenu-title">Laptop Chargers</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#products" class="submenu-title">Laptop Chargers</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#products" class="submenu-title">Keybords</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Services</p>
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#repirs" class="submenu-title">Softwares Installation</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#repairs" class="submenu-title">Laptop Repairs</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#repairs" class="submenu-title">Desktop Repairs</a>
+              </li>
+              <li class="submenu-category">
+                <a href="repairs" class="submenu-title">IT Support</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-category">
+            <a href="#collections" class="menu-title">Collenctions</a>
+          </li>
+          <li class="menu-category">
+            <a href="#aboutus" class="menu-title">About Us</a>
+          </li>
+          <li class="menu-category">
+            <a href="#blog" class="menu-title">Blog</a>
+          </li>
+          <li class="menu-category">
+            <a href="#" class="menu-title">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="menu-bottom">
+          <ul class="menu-social-container">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--
+      - MAIN
+    -->
+    <main>
+      <!--
+        - BANNER
+      -->
+      <div class="banner">
+        <div class="container">
+          <div class="slider-container has-scrollbar">
+            <div class="slider-item">
+              <div class="banner-content">
+                <p class="banner-subtitle">Trending Product</p>
+                <h2 class="banner-title">HP Elitebook 840</h2>
+                <p class="banner-tex">
+                  @Ksh <b>50000</b>.00
+                </p>
+                <a href="#" class="banner-btn">See Details</a>
+              </div>
+              <div class="banner-img">
+                <img src="./static/images/products/Hp-elitebook-840.jpg" alt="trending product image" class="showcase-img">
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="banner-content">
+                <p class="banner-subtitle">Deal of the day</p>
+                <p class="banner-title">Dell Latitude 5490 </p>
+                <div class="price-box">
+                  <p class="price">@KSh.150000.00</p>
+                  <del>Ksh.200000.00</del>
+                </div>
+                <a href="#deals" class="banner-btn">See More</a>
+              </div>
+              <div class="banner-img">
+                <img src="./static/images/products/360-laptop.png" alt="deal day image" class="showcase-img">
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="banner-content">
+                <p class="banner-subtitle">Upto date with compumart</p>
+                <h2 class="banner-title">Gain points on Compumart</h2>
+                <p class="blog-intro">
+                  Now you can earn upto 100 points when you make any purchase with 
+                  Compumart and then later use it for purches other products and service...
+                </p>
+                <a href="#blog" class="banner-btn">See Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        - CATEGORY
+      -->
+
+      <div id="repairs" class="category">
+        <div class="container">
+          <div class="category-item-container has-scrollbar">
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./static/images/products/windows-install-1.png" alt="Watch" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Software Installation</h3>
+                  <p class="category-item-amount">(53) Done</p>
+                </div>
+                <a href="#" class="category-btn">Details</a>
+              </div>
+            </div>
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./static/images/products/screen-fix.jpeg" alt="Watch" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Laptop Screen Replacementh</h3>
+                  <p class="category-item-amount">(150) Done</p>
+                </div>
+                <a href="#" class="category-btn">Details</a>
+              </div>
+            </div>
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./static/images/products/motherboard.jpg" alt="Watch" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Motherboard Replacements</h3>
+                  <p class="category-item-amount">(200) Done</p>
+                </div>
+                <a href="#" class="category-btn">Details</a>
+              </div>
+            </div>
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./static/images/products/repire-service-1.jpg" alt="Watch" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Motherboard fixes </h3>
+                  <p class="category-item-amount">(50) Done</p>
+                </div>
+                <a href="#" class="category-btn">Details</a>
+              </div>
+            </div>
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./static/images/products/keyboard-1.jpg" alt="Watch" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Keybord Replacements</h3>
+                  <p class="category-item-amount">(130) Done</p>
+                </div>
+                <a href="#" class="category-btn">Details</a>
+              </div>
+            </div>
+            <div class="category-item">
+              <div class="category-img-box">
+                <img src="./static/images/products/system.jpg" alt="Watch" width="30">
+              </div>
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">System Troubleshoots</h3>
+                  <p class="category-item-amount">(300) Done</p>
+                </div>
+                <a href="#" class="category-btn">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+        - PRODUCT
+      -->
+      <div class="product-container">
+        <div class="container">
+          <!--
+            - SIDEBAR
+          -->
+          <div class="sidebar  has-scrollbar" data-mobile-menu>
+            <div class="sidebar-category">
+              <div class="sidebar-top">
+                <h2 class="sidebar-title">Category</h2>
+                <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                  <i class="fa fa-times"></i>
+                </button>
+              </div>
+              <ul class="sidebar-menu-category-list">
+                <li class="sidebar-menu-category">
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+                    <div class="menu-title-flex">
+                      <img src="./static/images/products/hp-side-al-4.jpg" alt="laptop image" width="20" height="20"
+                        class="menu-title-img">
+                      <p class="menu-title">Laptops</p>
+                    </div>
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+                  </button>
+
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Lenovo</p>
+                        <data value="300" class="stock" title="Available Stock">300</data>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Hp</p>
+                        <data value="60" class="stock" title="Available Stock">60</data>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Dell</p>
+                        <data value="50" class="stock" title="Available Stock">50</data>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Toshiba</p>
+                        <data value="87" class="stock" title="Available Stock">87</data>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidebar-menu-category">
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+                    <div class="menu-title-flex">
+                      <img src="./static/images/products/Desktop-thinkpad-1.jpg" alt="Desktop image" class="menu-title-img" width="20"
+                        height="20">
+                      <p class="menu-title">Desktop Computers</p>
+                    </div>
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+                  </button>
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Dell</p>
+                        <data value="45" class="stock" title="Available Stock">45</data>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Hp</p>
+                        <data value="75" class="stock" title="Available Stock">75</data>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">CQ</p>
+                        <data value="35" class="stock" title="Available Stock">35</data>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Thinkpad</p>
+                        <data value="26" class="stock" title="Available Stock">26</data>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidebar-menu-category">
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+                    <div class="menu-title-flex">
+                      <img src="./static/images/products/Meser-Optical-Mouse.jpg" alt="Accessories image" class="menu-title-img" width="20"
+                        height="20">
+                      <p class="menu-title">Accessories</p>
+                    </div>
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+                  </button>
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Laptop Bateries</p>
+                        <data value="46" class="stock" title="Available Stock">46</data>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Laptop Screens</p>
+                        <data value="73" class="stock" title="Available Stock">73</data>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Mouse</p>
+                        <data value="61" class="stock" title="Available Stock">61</data>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidebar-menu-category">
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+                    <div class="menu-title-flex">
+                      <img src="./static/images/products/repairs.jpg" alt="Motherbord image" class="menu-title-img" width="20"
+                        height="20">
+                      <p class="menu-title">Services</p>
+                    </div>
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+                  </button>
+
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Laptop Repaires</p>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Desktop Repaire</p>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Software installation</p>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">IT Consaultation</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-menu-category">
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+                    <div class="menu-title-flex">
+                      <img src="./static/images/products/watch-1.jpg" alt="Watches" class="menu-title-img" width="20"
+                        height="20">
+                      <p class="menu-title">Watches</p>
+                    </div>
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+                  </button>
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Sumsung</p>
+                        <data value="68" class="stock" title="Available Stock">68</data>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">itel</p>
+                        <data value="46" class="stock" title="Available Stock">46</data>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Huwawei</p>
+                        <data value="79" class="stock" title="Available Stock">79</data>
+                      </a>
+                    </li>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Techno</p>
+                        <data value="23" class="stock" title="Available Stock">23</data>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidebar-menu-category">
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+                    <div class="menu-title-flex">
+                      <img src="./static/images/products/printer-camon.png" alt="printers" class="menu-title-img" width="20"
+                        height="20">
+                      <p class="menu-title">Printers</p>
+                    </div>
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+                  </button>
+
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Hp Leserjet</p>
+                        <data value="50" class="stock" title="Available Stock">50</data>
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Lenovo Qr</p>
+                        <data value="48" class="stock" title="Available Stock">48</data>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="product-showcase">
+              <h3 class="showcase-heading">Sugested for you</h3>
+              <div class="showcase-wrapper">
+                <div class="showcase-container">
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./static/images/products/hp-side-r-3.jpg" alt="Watch" width="75" height="75"
+                        class="showcase-img">
+                    </a>
+                    <div class="showcase-content">
+                        <h4 class="showcase-title">Hp Litebook 5940</h4>
+                        <a style="color: blue; font-size: 11px;" href="#">See details</a>
+                    </div>
+                  </div>
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./static/images/products/dell-side-al-1.jpg" alt="Watch" width="75" height="75"
+                        class="showcase-img">
+                    </a>
+                    <div class="showcase-content">
+                        <h4 class="showcase-title">Dell Latitude 3209</h4>
+                        <a style="color: blue; font-size: 11px;" href="#">See details</a>
+                    </div>
+                  </div>
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./static/images/products/hp-sied-4.jpg" alt="Watch" width="75" height="75"
+                        class="showcase-img">
+                    </a>
+                    <div class="showcase-content">
+                        <h4 class="showcase-title">Lenovo Thinkpad</h4>
+                        <a style="color: blue; font-size: 11px;" href="#">See details</a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./static/images/products/dell-open-2.jpg" alt="Watch" width="75" height="75"
+                        class="showcase-img">
+                    </a>
+                    <div class="showcase-content">
+                        <h4 class="showcase-title">Huawei Brand 6</h4>
+                        <a style="color: blue; font-size: 11px;" href="#">See details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div id="products" class="product-box">
+            <!--
+              - PRODUCT GRID
+            -->
+            <div class="product-main">
+              <h2 class="title">Products</h2>
+              <div class="product-grid">
+                <div class="showcase">
+                  <div class="showcase-banner">
+                    <div class="showcase-img">
+                      <img src="./static/images/products/hp-sied-4.jpg" alt="product image" width="300" class="product-img default">
+                      <img src="./static/images/products/hp-sied-4.jpg" alt="product image" width="300" class="product-img hover">
+                    </div>
+                    <p class="showcase-badge">15% off</p>
+                    <div class="showcase-actions">
+                      <button class="btn-action">
+                        <ion-icon name="star"></ion-icon>
+                      </button>
+                      <button class="btn-action">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+                      <button class="btn-action">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="showcase-content">
+                    <a href="#" class="showcase-category">Hp Litebook 5490</a>
+                    <a href="#">
+                      <h3 class="showcase-title">Color: Gold</h3>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <p> 26 starts</p>
+                    </div>
+                    <div class="price-box">
+                      <p class="price">Ksh. <span>30,000.00</span></p>
+                      <p>Ksh. <del>35,000.00</del></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase">
+                  <div class="showcase-banner">
+                    <div class="showcase-img">
+                      <img src="./static/images/products/dell-side-1.jpg" alt="Laptop Image" class="product-img default" width="300">
+                      <img src="./static/images/products/dell-side-1.jpg" alt="Laptop Image" class="product-img hover" width="300">
+                    </div>
+                    <p class="showcase-badge angle black">1Y W</p>
+                    <div class="showcase-actions">
+                      <div class="showcase-actions">
+                        <button class="btn-action">
+                          <ion-icon name="star"></ion-icon>
+                        </button>
+                        <button class="btn-action">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+                        <button class="btn-action">
+                          <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="showcase-content">
+                    <a href="#" class="showcase-category">Dell Latitude 5490</a>
+                    <a href="#">
+                      <h3 class="showcase-title">Color: Silver</h3>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <p> 26 starts</p>
+                    </div>
+                    <div class="price-box">
+                      <p class="price">Ksh. <span>30,000.00</span></p>
+                      <p>Ksh. <del>35,000.00</del></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase">
+                  <div class="showcase-banner">
+                    <div class="showcase-img">
+                      <img src="./static/images/products/Lenovo-IdeaPad-3-14-Celeron-4-GB-Ram-1-TB-HDD.jpg" alt="Laptop image" class="product-img default" width="300">
+                      <img src="./static/images/products/Lenovo-IdeaPad-3-14-Celeron-4-GB-Ram-1-TB-HDD.jpg" alt="Laptop image" class="product-img hover" width="300">
+                    </div>
+                    <p class="showcase-badge angle pink">new</p>
+                    <div class="showcase-actions">
+                      <button class="btn-action">
+                        <ion-icon name="star"></ion-icon>
+                      </button>
+                      <button class="btn-action">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+                      <button class="btn-action">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="showcase-content">
+                    <a href="#" class="showcase-category">Hp Litebook 5490</a>
+                    <a href="#">
+                      <h3 class="showcase-title">Color: black</h3>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <p> 26 starts</p>
+                    </div>
+                    <div class="price-box">
+                      <p class="price">Ksh. <span>30,000.00</span></p>
+                      <p>Ksh. <del>0.00</del></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--
+              - PRODUCT FEATURED
+            -->
+            <div id="deals" class="product-featured">
+              <h2 class="title">Deals of the day</h2>
+              <div class="showcase-wrapper has-scrollbar">
+                <div class="showcase-container">
+                  <div class="showcase">
+                    <div class="showcase-banner">
+                      <img src="./static/images/products/watch-1.jpg" alt="Deals photo" class="showcase-img">
+                    </div>
+                    <div class="showcase-content">
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <p> 100 starts</p>
+                      </div>
+                      <a href="#">
+                        <h3 class="showcase-title">Huawei Brand 6</h3>
+                      </a>
+                      <ul class="showcase-desc">
+                        <p class="pf-link">8GB Ram</p>
+                        <p class="pf-link">Lasting Batterry</p>
+                        <p class="pf-link">Corei7</p>
+                        <p class="pf-link">8 Gen</p>
+                        <p class="pf-link">3.0 GHz Speed</p>
+                      </ul>
+                      <div class="price-box">
+                        <p class="price">Ksh. 1500.00</p>
+                        <del>Ksh. 2000.00</del>
+                      </div>
+                      <button class="add-cart-btn">add to cart</button>
+                      <div class="showcase-status">
+                        <div class="wrapper">
+                          <p>
+                            already sold: <b>20</b>
+                          </p>
+                          <p>
+                            available: <b>40</b>
+                          </p>
+                        </div>
+                        <div class="showcase-status-bar"></div>
+                      </div>
+                      <div class="countdown-box">
+                        <p class="countdown-desc">
+                          Hurry Up! Offer ends in:
+                        </p>
+                        <div class="countdown">
+                          <div class="countdown-content">
+                            <p class="display-number">360</p>
+                            <p class="display-text">Days</p>
+                          </div>
+                          <div class="countdown-content">
+                            <p class="display-number">24</p>
+                            <p class="display-text">Hours</p>
+                          </div>
+                          <div class="countdown-content">
+                            <p class="display-number">59</p>
+                            <p class="display-text">Min</p>
+                          </div>
+                          <div class="countdown-content">
+                            <p class="display-number">00</p>
+                            <p class="display-text">Sec</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase-container">
+                  <div class="showcase">
+                    <div class="showcase-banner">
+                      <img src="./static/images/products/360-laptop.png" alt="Deals photo" class="showcase-img">
+                    </div>
+                    <div class="showcase-content">
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <p> 26 starts</p>
+                      </div>
+                      <a href="#">
+                        <h3 class="showcase-title">Hp Litebook 5490</h3>
+                      </a>
+                      <ul class="showcase-desc">
+                        <p class="pf-link">8GB Ram</p>
+                        <p class="pf-link">256 SSD</p>
+                        <p class="pf-link">Corei7</p>
+                        <p class="pf-link">8 Gen</p>
+                        <p class="pf-link">3.0 GHz Speed</p>
+                      </ul>
+                      <div class="price-box">
+                        <p class="price">Ksh. 15000.00</p>
+                        <del>Ksh. 20000.00</del>
+                      </div>
+                      <button class="add-cart-btn">add to cart</button>
+                      <div class="showcase-status">
+                        <div class="wrapper">
+                          <p>
+                            already sold: <b>40</b>
+                          </p>
+                          <p>
+                            available: <b>90</b>
+                          </p>
+                        </div>
+                        <div class="showcase-status-bar"></div>
+                      </div>
+                      <div class="countdown-box">
+                        <p class="countdown-desc">
+                          Hurry Up! Offer ends in:
+                        </p>
+                        <div class="countdown">
+                          <div class="countdown-content">
+                            <p class="display-number">360</p>
+                            <p class="display-text">Days</p>
+                          </div>
+                          <div class="countdown-content">
+                            <p class="display-number">24</p>
+                            <p class="display-text">Hours</p>
+                          </div>
+                          <div class="countdown-content">
+                            <p class="display-number">59</p>
+                            <p class="display-text">Min</p>
+                          </div>
+                          <div class="countdown-content">
+                            <p class="display-number">00</p>
+                            <p class="display-text">Sec</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--
+              - PRODUCT MINIMAL
+            -->
+            <div class="product-minimal">
+              <div class="product-showcase">
+                <h2 class="title">Top Products</h2>
+                <div class="showcase-wrapper  has-scrollbar">
+                  <div class="showcase-container">
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img src="./static/images/products/dell-side-1.jpg" alt="Laptop image" class="showcase-img"
+                          width="70">
+                      </a>
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">HP litebook 5490</h4>
+                        </a>
+                        <a href="#" class="showcase-category">Laptop</a>
+                        <div class="tp-rating">
+                          <ion-icon name="star"></ion-icon>
+                          <p> 26 starts</p>
+                        </div>
+                        <a style="color: rgb(129, 129, 252); font-size: 10px;" href="#">See Details</a>
+                      </div>
+                    </div>
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img src="./static/images/products/hp-side-r-3.jpg" alt="laptop image" class="showcase-img"
+                          width="70">
+                      </a>
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">Acer 5490</h4>
+                        </a>
+                        <a href="#" class="showcase-category">Laptop</a>
+                        <div class="tp-rating">
+                          <ion-icon name="star"></ion-icon>
+                          <p> 26 starts</p>
+                        </div>
+                        <a style="color: rgb(129, 129, 252); font-size: 10px;" href="#">See Details</a>
+                      </div>
+                    </div>
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img src="./static/images/products/lenovo-open-1.jpg" alt="Laptop image" class="showcase-img"
+                          width="70">
+                      </a>
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">HP litebook 127</h4>
+                        </a>
+                        <a href="#" class="showcase-category">Laptop</a>
+                        <div class="tp-rating">
+                          <ion-icon name="star"></ion-icon>
+                          <p> 26 starts</p>
+                        </div>
+                        <a style="color: rgb(129, 129, 252); font-size: 10px;" href="#">See Details</a>
+                      </div>
+                    </div>
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img src="./static/images/products/Lenovo-side-1.jpg" alt="Laptop image" class="showcase-img"
+                          width="70">
+                      </a>
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">HP Litebook 540</h4>
+                        </a>
+                        <a href="#" class="showcase-category">Laptop</a>
+                        <div class="tp-rating">
+                          <ion-icon name="star"></ion-icon>
+                          <p> 26 starts</p>
+                        </div>
+                        <a style="color: rgb(129, 129, 252); font-size: 10px;" href="#">See Details</a>
+                      </div>
+                    </div>
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img src="./static/images/products/hp-side-al-4.jpg" alt="laptop image" class="showcase-img"
+                          width="70">
+                      </a>
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">Lenovo Thinkpad</h4>
+                        </a>
+                        <a href="#" class="showcase-category">Laptop</a>
+                        <div class="tp-rating">
+                          <ion-icon name="star"></ion-icon>
+                          <p> 26 starts</p>
+                        </div>
+                        <a style="color: rgb(129, 129, 252); font-size: 10px;" href="#">See Details</a>
+                      </div>
+                    </div>
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img src="./static/images/products/laptop-on-table.jpeg" alt="laptop image" class="showcase-img"
+                          width="70">
+                      </a>
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">HP Probook 6270</h4>
+                        </a>
+                        <a href="#" class="showcase-category">Laptop</a>
+                        <div class="tp-rating">
+                          <ion-icon name="star"></ion-icon>
+                          <p> 26 starts</p>
+                        </div>
+                        <a style="color: rgb(129, 129, 252); font-size: 10px;" href="#">See Details</a>
+                      </div>
+                    </div>
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img src="./static/images/products/Hp-open-3.jpg" alt="Laptop image" class="showcase-img"
+                          width="70">
+                      </a>
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">Dell Latitude 5490</h4>
+                        </a>
+                        <a href="#" class="showcase-category">Laptop</a>
+                        <div class="tp-rating">
+                          <ion-icon name="star"></ion-icon>
+                          <p> 26 starts</p>
+                        </div>
+                        <a style="color: rgb(129, 129, 252); font-size: 10px;" href="#">See Details</a>
+                      </div>
+                    </div>
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img src="./static/images/products/watch-1.jpg" alt="Watch" class="showcase-img"
+                          width="70">
+                      </a>
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">Huawei brand 6</h4>
+                        </a>
+                        <a href="#" class="showcase-category">Watch</a>
+                        <div class="tp-rating">
+                          <ion-icon name="star"></ion-icon>
+                          <p> 26 starts</p>
+                        </div>
+                        <a style="color: rgb(129, 129, 252); font-size: 10px;" href="#">See Details</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+        - TESTIMONIALS, CTA & SERVICE
+      -->
+      <div>
+        <div id="aboutus" class="container">
+
+          <div class="testimonials-box">
+
+            <!--
+              - TESTIMONIALS
+            -->
+
+            <div class="testimonial">
+              <h2 class="title">Brief Introduction</h2>
+              <div class="testimonial-card">
+                <img src="./static/images/products/laptop-bn-1.jpeg" alt="founder image" class="testimonial-banner" width="80" height="80">
+                <p class="testimonial-name">Compumart</p>
+                <p class="testimonial-title">Technics Solutions</p>
+                <img src="./static/images/quotes.svg" alt="quotation" class="quotation-img" width="26">
+                <p class="testimonial-desc">
+                  Compumart is the leading Laptop Sales and repairs shop in Nakuru City Kenya. it's been operating for over 13 Years
+                  under business approval number 1234. 
+                </p>
+              </div>
+            </div>
+            <!--
+              - CTA
+            -->
+
+            <div class="cta-container">
+              <h2 class="title">Our Customers opinion</h2>
+              <img src="./static/images/blog-1.jpg" alt="opinion" class="cta-banner">
+              <a href="#" class="cta-content">
+                <img src="./static/images/quotes.svg" alt="quotation" class="quotation-img" width="26">
+                <p class="cta-text" style="font-size: 14px;">I have always recommended compumart to alot of my friends ever since My laptop screen was completely fixed after i had visited a number of individuals without success
+                and the feedback from friends are stunning.</p>
+                <p class="discount">Said Beson</p>
+              </a>
+            </div>
+
+            <!--
+              - SERVICE
+            -->
+
+            <div class="service">
+              <h2 class="title">Compitency Guage</h2>
+              <div class="service-container">
+                <a href="#" class="service-item">
+                  <div class="service-icon">
+                    <ion-icon name="boat-outline"></ion-icon>
+                  </div>
+                  <div class="service-content">
+                    <h3 class="service-title">Customer Stisfaction</h3>
+                    <p class="service-desc">We take pride in custormer relations</p>
+                  </div>
+                </a>
+                <a href="#" class="service-item">
+                  <div class="service-icon">
+                    <ion-icon name="rocket-outline"></ion-icon>
+                  </div>
+                  <div class="service-content">
+                    <h3 class="service-title">Quality Services</h3>
+                    <p class="service-desc">We value Quality and That's our definition</p>
+                  </div>
+                </a>
+                <a href="#" class="service-item">
+                  <div class="service-icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                  </div>
+                  <div class="service-content">
+                    <h3 class="service-title">Beter Suport System</h3>
+                    <p class="service-desc">With Compumart, it's never a hustle to get the problem solved
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="service-item">
+                  <div class="service-icon">
+                    <ion-icon name="arrow-undo-outline"></ion-icon>
+                  </div>
+                  <div class="service-content">
+                    <h3 class="service-title">We believe in giving back</h3>
+                    <p class="service-desc">Did you know by continuous purchase of goods at compumart you again points that you 
+                      can use to pay for our services?. No worry Now you Know 
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+        - BLOG
+      -->
+      <div id="blog" class="blog">
+        <div class="container">
+          <h2 class="title">Our Blog posts</h2>
+          <div class="blog-container has-scrollbar">
+            <div class="blog-card">
+              <a href="#">
+                <img src="./static/images/blog-1.jpg" alt="blog image" width="300" class="blog-banner">
+              </a>
+              <div class="blog-content">
+                <a href="#" class="blog-category">Gain points on Compumart</a>
+                <a href="#">
+                  <p class="blog-txt">Now you can earn upto 100 points when you make any purchase with Compumart and then later use it 
+                  for purches other products and service <span style="color: blue;">read more</span></p>
+                </a><a href="#"></a>
+                <p class="blog-meta">
+                  <time datetime="2022-04-06">Apr 06, 2022</time>
+                </p>
+              </div>
+            </div>
+            <div class="blog-card">
+              <a href="#">
+                <img src="./static/images/blog-2.jpg" alt="blog image"
+                  class="blog-banner" width="300">
+              </a>            
+              <div class="blog-content">
+                <a href="#" class="blog-category">Reward Yourself by sharing</a>
+                <a href="#">
+                  <p class="blog-txt">Did You just asked how? Compumart will always keep you updated with the latest of it's goodies
+                    Earn upto Ksh 10 by refaring a friend to Compumart <span style="color: blue;">read more</span></p>
+                </a><a href="#"></a>
+                <p class="blog-meta">
+                  <time datetime="2022-04-06">Apr 06, 2022</time>
+                </p>
+              </div>            
+            </div>
+
+            <div class="blog-card">
+              <a href="#">
+                <img src="./static/images/nworry.jpg" alt="blog image"
+                  class="blog-banner" width="300">
+              </a>
+              <div class="blog-content">
+                <a href="#" class="blog-category">Shhh! Just dont worry about it</a>
+                <a href="#">
+                  <p class="blog-txt">Wait!! did you just get a technical issue will working on your comp? Kamakawa Compumart will always get you out 
+                    of the mess, don't move just click <span style="color: blue;">read more</span></p>
+                </a><a href="#"></a>
+                <p class="blog-meta">
+                  <time datetime="2022-04-06">Apr 06, 2022</time>
+                </p>
+              </div>
+            </div>
+            <div class="blog-card">           
+              <a href="#">
+                <img src="./static/images/blog-4.jpg" alt="blog image"
+                  class="blog-banner" width="300">
+              </a>          
+              <div class="blog-content">
+                <a href="#" class="blog-category">Just One Touch away</a>
+                <a href="#">
+                  <p class="blog-txt">You feel like comming to town is tiring and you need compumart services right? Don't worry nani 
+                    Compumart cares. we are just 'one touch away' <span style="color: blue;">read more</span></p>
+                </a><a href="#"></a>
+                <p class="blog-meta">
+                  <time datetime="2022-04-06">Apr 06, 2022</time>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--
+      - FOOTER
+    -->
+
+    <footer>
+
+      <div class="footer-category">
+
+        <div id="collections" class="container">
+
+          <h2 class="footer-category-title">Computech Stores</h2>
+
+          <div class="footer-category-box">
+
+            <h3 class="category-box-title">Accessories :</h3>
+            <a href="#" class="footer-category-link">Mause</a>
+            <a href="#" class="footer-category-link">Keybord</a>
+            <a href="#" class="footer-category-link">Laptop Adaptor</a>
+            <a href="#" class="footer-category-link">Screens</a>
+            <a href="#" class="footer-category-link">Wireless Cards</a>
+            <a href="#" class="footer-category-link">Hard Disks</a>
+            <a href="#" class="footer-category-link">Solid State Disks</a>
+
+          </div>
+
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Laptops:</h3>
+            <a href="#" class="footer-category-link">Lenovo</a>
+            <a href="#" class="footer-category-link">Hp</a>
+            <a href="#" class="footer-category-link">Dell</a>
+            <a href="#" class="footer-category-link">CQ</a>
+            <a href="#" class="footer-category-link">Apple</a>
+          </div>
+
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Services :</h3>
+            <a href="#" class="footer-category-link">OS installation</a>
+            <a href="#" class="footer-category-link">Os update and Activation</a>
+            <a href="#" class="footer-category-link">Screen Replacement</a>
+            <a href="#" class="footer-category-link">Windows Troubleshooting</a>
+            <a href="#" class="footer-category-link">Battery Replacement</a>
+            <a href="#" class="footer-category-link">Keyboard Replacement</a>
+            <a href="#" class="footer-category-link">Motherboard Replacement</a>
+            <a href="#" class="footer-category-link">Bios Update</a>
+          </div>
+
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Social Links:</h3>
+            <a href="#" class="footer-category-link">Facebook</a>
+            <a href="#" class="footer-category-link">Twitter</a>
+            <a href="#" class="footer-category-link">Linkedin</a>
+            <a href="#" class="footer-category-link">Instagram</a>
+            <a href="#" class="footer-category-link">Tiktok</a>
+          </div>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Supported Payment Methods:</h3>
+            <img style="width: 90%;" src="./static/images/payment.png" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <div class="container">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Top Categories</h2>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Laptops</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Desktop Computers</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Accessories</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Services</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Watches</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Products</h2>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Prices drop</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">New products</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Best sales</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Sugested</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Trending</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Our Company</h2>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Compitency</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Legal Notice $ Awards</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Terms and conditions</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">About us</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Secure payment</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Services</h2>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Price drops</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">New Services</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Top Services</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Request service</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Contact</h2>
+            </li>
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <address class="content">
+                Room 134
+                Cigma Plaza, Nakuru - Kenya
+              </address>
+            </li>
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+              <a href="tel:+607936-8058" class="footer-nav-link">+254724740305</a>
+            </li>
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <a href="mailto:example@gmail.com" class="footer-nav-link">compumarttechnologies@gmail.com</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Follow Us</h2>
+            </li>
+            <li>
+              <ul class="social-link">
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            Copyright &copy; <a href="#">Compumart</a> all rights reserved.
+          </p>
+
+        </div>
+
+      </div>
+
+    </footer>
+  </div>
+  <!--
+    - custom js link
+  -->
+  <script src="./static/script.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
