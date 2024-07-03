@@ -1,4 +1,5 @@
 from flask import *
+from models import *
 
 
 admin=Blueprint("admin",__name__,static_folder='static',template_folder='template')
@@ -11,10 +12,9 @@ def home():
 
 
 # upload content into the web
-@admin.route('')
+@admin.route('',methods=['GET','POST'])
 def upload_content():
     pass
-
-
+    
 
 
