@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+  </head>
+  <body>
+    <div class="payment-details">
+      <!-- method of payment label -->
+      <form class="form payment-details">
+        {{ form.hidden_tag() }}
+
+        <!-- select method of payment -->
+         {{ form.method }}
+        <!-- if credit card is selected -->
+
+         {%if form.method.data == 'CreditCard'%}
+         <div class="form credit-card">
+                {{ form.name }}
+                {{ form.card_no }}
+                {{ form.date }}
+                {{ form.cvv }}
+         </div>
+
+         <!-- if mpesa is selected -->
+
+         {%elif form.method.data == 'Mobile'%}
+         <div class="form mpesa">
+
+            {{ form.code }}
+            {{ form.phone }}
+            
+         </div>
+         {%endif%}
+        {{ form.submit }}
+      </form>
+    </div>
+  </body>
+</html>
+
+
+
+<!-- ==========================================NOTES======================================= -->
+ <!-- i will have to use JS for the hidding and rendering of creditcard and mobile forms depending on front end selection,but so far
+  so good -->
+  <!-- if not i can make them separate forms -->

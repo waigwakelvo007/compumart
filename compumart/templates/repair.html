@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{%extends 'layout.html'%}
+{%block body_content%}
+<div class="repair-services">
+    <div class="repair-services services">
+        
+    </div>
+
+    <div class="repair-services get-quote">
+        <form action="#" class="form get-quote">
+        {{ form.name() }}
+        {{ form.email() }}
+        {{ form.issue() }}
+        {{ form.submit() }}
+        </form>
+    </div>
+
+</div>
+{%endblock%}
